@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pașaport Proiect - Bolid F1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .passport-card {
+            background: white;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-top: 8px solid #e10600; /* Roșu F1 */
+        }
+        .header {
+            background: #1f1f1f;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 { margin: 0; font-size: 24px; letter-spacing: 2px; }
+        .header p { margin: 5px 0 0; opacity: 0.8; }
+        
+        .content { padding: 30px; }
+        
+        .info-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ddd;
+        }
+        .info-box span { display: block; color: #888; font-size: 12px; text-transform: uppercase; }
+        .info-box strong { font-size: 18px; color: #333; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th { text-align: left; color: #888; font-size: 14px; padding-bottom: 10px; }
+        td { padding: 12px 0; border-bottom: 1px solid #eee; font-weight: 500; }
+        .qty { text-align: right; color: #e10600; font-weight: bold; }
+
+        .footer {
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+            color: #666;
+        }
+        .badge {
+            display: inline-block;
+            background: #e10600;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="passport-card">
+    <div class="header">
+        <h1>PAȘAPORT PROIECT</h1>
+        <p>Model Geometric: Bolid Formula 1</p>
+    </div>
+
+    <div class="content">
+        <div class="info-section">
+            <div class="info-box">
+                <span>Elev</span>
+                <strong>Domaschin Valeriu</strong>
+            </div>
+            <div class="info-box">
+                <span>Clasa</span>
+                <strong>a VIII-a B</strong>
+            </div>
+            <div class="info-box">
+                <span>Timp de lucru</span>
+                <strong>2h 30min</strong>
+            </div>
+            <div class="info-box">
+                <span>Status</span>
+                <div class="badge">Finalizat</div>
+            </div>
+        </div>
+
+        <h3>Inventar Forme Geometrice</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Componentă</th>
+                    <th style="text-align: right;">Cantitate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Cilindru</td><td class="qty">x5</td></tr>
+                <tr><td>Dreptunghi</td><td class="qty">x9</td></tr>
+                <tr><td>Con</td><td class="qty">x4</td></tr>
+                <tr><td>Triunghi</td><td class="qty">x4</td></tr>
+                <tr><td>Triunghi Dreptunghic</td><td class="qty">x2</td></tr>
+                <tr><td>Pătrat</td><td class="qty">x2</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        "Viteză prin geometrie și precizie."
+    </div>
+</div>
+
+</body>
+</html>
